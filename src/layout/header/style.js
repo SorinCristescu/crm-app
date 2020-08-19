@@ -56,11 +56,11 @@ export const Avatar = styled.div`
 
   /* border: 1px solid grey; */
 
-  p {
+  /* p {
     color: white;
     display: block;
     margin: auto;
-  }
+  } */
 `;
 
 export const UserName = styled.p`

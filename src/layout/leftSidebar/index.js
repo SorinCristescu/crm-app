@@ -9,12 +9,8 @@ import { useSelector, useDispatch } from 'react-redux';
 // STYLES
 import { LeftSidebarContainer } from './style';
 
-const LeftSidebar = () => {
-  return (
-    <LeftSidebarContainer>
-      <h3></h3>
-    </LeftSidebarContainer>
-  );
+const LeftSidebar = ({ children }) => {
+  return <LeftSidebarContainer>{children}</LeftSidebarContainer>;
 };
 
 LeftSidebar.propTypes = {

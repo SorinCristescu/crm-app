@@ -7,12 +7,22 @@ import { useSelector, useDispatch } from 'react-redux';
 // COMPONENTS
 
 // STYLES
+import { Container, ProgressBar, ColorBar } from './style';
 
-const Progress = () => {
+const Progress = ({ stepName, level }) => {
   return (
-    <div>
-      <h3>Progress</h3>
-    </div>
+    <Container>
+      <p>
+        {/* {stepName} */}
+        BRIEF
+      </p>
+      <div className="wrapper">
+        <ProgressBar>
+          <ColorBar level={level} />
+          <img src="/assets/svg/chat.svg" alt="Chat icon" />
+        </ProgressBar>
+      </div>
+    </Container>
   );
 };
 

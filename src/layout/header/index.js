@@ -21,9 +21,7 @@ const Header = () => {
           <Avatar>
             <p>SC</p>
           </Avatar>
-          <UserName>
-            <p>Sorin Teodor Cristescu</p>
-          </UserName>
+          <UserName>Sorin Teodor Cristescu</UserName>
         </div>
 
         <p>sign in</p>

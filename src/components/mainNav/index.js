@@ -9,18 +9,21 @@ import { useSelector, useDispatch } from 'react-redux';
 // STYLES
 import { Container } from './style';
 
-const Question = ({ name, description }) => {
+const MainNav = ({ routes }) => {
   return (
     <Container>
-      <h5>{name}</h5>
-      <p>{description}</p>
+      {routes &&
+        routes.map((route) => (
+          <div key={route.id} className="nav-link-container">
+            <p>{route.name}</p>
+          </div>
+        ))}
     </Container>
   );
 };
 
-Question.propTypes = {
+MainNav.propTypes = {
   name: PropTypes.string,
-  description: PropTypes.string,
 };
 
-export default Question;
+export default MainNav;

@@ -13,11 +13,35 @@ import Footer from '../layout/footer';
 // STYLES
 import { LayoutContainer } from './style';
 
+// COMPONENTS
+import MainNav from '../components/mainNav';
+
+const routes = [
+  {
+    id: 1,
+    name: 'new project',
+  },
+  {
+    id: 2,
+    name: 'my projects',
+  },
+  {
+    id: 3,
+    name: 'my profile',
+  },
+  {
+    id: 4,
+    name: 'sign out',
+  },
+];
+
 const Layout = (props) => {
   return (
     <LayoutContainer>
       <Header />
-      <LeftSidebar />
+      <LeftSidebar>
+        <MainNav routes={routes} />
+      </LeftSidebar>
       <RightSidebar />
       <div>{props.children}</div>
       <Footer />
