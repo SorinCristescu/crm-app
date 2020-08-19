@@ -8,8 +8,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "formik": "^2.1.5",
+    "gsap": "^3.5.0",
+    "moment-timezone": "^0.5.31",
     "next": "9.5.2",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.13.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-keyboard-event-handler": "^1.5.4",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.1",
+    "react-toastify": "^6.0.8",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.1",
+    "yup": "^0.29.3"
   }
 }
