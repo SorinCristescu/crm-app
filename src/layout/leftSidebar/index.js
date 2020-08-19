@@ -7,12 +7,13 @@ import { useSelector, useDispatch } from 'react-redux';
 // COMPONENTS
 
 // STYLES
+import { LeftSidebarContainer } from './style';
 
 const LeftSidebar = () => {
   return (
-    <div>
-      <h3>Header</h3>
-    </div>
+    <LeftSidebarContainer>
+      <h3></h3>
+    </LeftSidebarContainer>
   );
 };
 

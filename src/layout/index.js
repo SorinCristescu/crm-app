@@ -5,14 +5,23 @@ import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 
 // COMPONENTS
+import Header from '../layout/header';
+import LeftSidebar from '../layout/leftSidebar';
+import RightSidebar from '../layout/rightSidebar';
+import Footer from '../layout/footer';
 
 // STYLES
+import { LayoutContainer } from './style';
 
-const Layout = () => {
+const Layout = (props) => {
   return (
-    <div>
-      <h3>Header</h3>
-    </div>
+    <LayoutContainer>
+      <Header />
+      <LeftSidebar />
+      <RightSidebar />
+      <div>{props.children}</div>
+      <Footer />
+    </LayoutContainer>
   );
 };
 

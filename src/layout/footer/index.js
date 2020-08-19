@@ -7,12 +7,13 @@ import { useSelector, useDispatch } from 'react-redux';
 // COMPONENTS
 
 // STYLES
-
+import { FooterContainer } from './style';
 const Footer = () => {
   return (
-    <div>
-      <h3>Footer</h3>
-    </div>
+    <FooterContainer>
+      <small>Terms and privacy</small>
+      <small>copyright 2020: All rights reserved</small>
+    </FooterContainer>
   );
 };
 
